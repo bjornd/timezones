@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" media="all" href="jquery-jvectormap.css"/>
+  <script src="jquery-1.7.2.min.js"></script>
+  <script src="jquery-jvectormap.js"></script>
+
+  <script src="timezones.js"></script>
+  <script>
+    $(function(){
+      $('#map').vectorMap({
+        map: 'tz_mill_en',
+        hoverOpacity: 0.8,
+        hoverColor: false,
+        colors: {
+          "_01:00": '#8DD3C7',
+          "_02:00": '#FFFFB3',
+          "_03:00": '#BEBADA',
+          "_04:00": '#FB8072',
+          "_05:00": '#80B1D3',
+          "_06:00": '#FDB462',
+          "_07:00": '#B3DE69',
+
+          "_08:00": '#8DD3C7',
+          "_09:00": '#FFFFB3',
+          "_10:00": '#BEBADA',
+          "_11:00": '#FB8072',
+          "+00:00": '#80B1D3',
+          "+01:00": '#FDB462',
+          "+02:00": '#B3DE69',
+
+          "+03:00": '#8DD3C7',
+          "+04:00": '#FFFFB3',
+          "+05:00": '#BEBADA',
+          "+06:00": '#FB8072',
+          "+07:00": '#80B1D3',
+          "+08:00": '#FDB462',
+          "+09:00": '#B3DE69',
+
+          "+10:00": '#8DD3C7',
+          "+11:00": '#FFFFB3',
+          "+12:00": '#BEBADA',
+          "+13:00": '#80B1D3',
+          "+14:00": '#FB8072',
+
+          "_03:30": '#FDB462',
+          "_04:30": '#B3DE69',
+
+          "_09:30": '#8DD3C7',
+          "+03:30": '#FFFFB3',
+          "+04:30": '#BEBADA',
+          "+05:30": '#80B1D3',
+          "+05:45": '#FB8072',
+          "+06:30": '#FDB462',
+          "+08:45": '#B3DE69',
+
+          "+09:30": '#8DD3C7',
+          "+10:30": '#FFFFB3',
+          "+11:30": '#BEBADA',
+          "+12:45": '#80B1D3'
+        }
+      });
+    })
+  </script>
+</head>
+<body>
+  <div id="map" style="width: 1000px; height: 600px"></div>
+</body>
+</html>
